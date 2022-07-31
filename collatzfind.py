@@ -1,8 +1,8 @@
 global int 
-i = 71261998
+i = 1
 
 def collatzfind():
-    i = 71261998
+    i = 1
     while True: # main loop
         number = i
         steps = 0
@@ -19,7 +19,7 @@ def collatzfind():
 
         if steps >= 1000:
             while True:
-                 print('winner winner chicken dinner: ' + str(i) + ' in ' + str(steps) + ' steps.')
+                 print('Number did not run into 1: ' + str(i) + ' in ' + str(steps) + ' steps.')
             return
 
         if number == 1:
