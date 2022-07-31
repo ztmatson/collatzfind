@@ -1,6 +1,3 @@
-from unittest import result
-
-
 def collatz(number):
     steps = 0
 
