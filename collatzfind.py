@@ -1,8 +1,6 @@
-global int 
-i = 1
-
 def collatzfind():
-    i = 1
+    i = int(input('What number to start with? (default is 1) '))
+    maxSteps = int(input('In how many steps without running into 1 do you want the program to stop? '))
     while True: # main loop
         number = i
         steps = 0
@@ -17,9 +15,10 @@ def collatzfind():
                 number = 3 * number + 1
                 steps+=1
 
-        if steps >= 1000:
+        if steps >= maxSteps:
             while True:
-                 print('Number did not run into 1: ' + str(i) + ' in ' + str(steps) + ' steps.')
+                print('Number did not run into 1: ' + str(i) + ' in ' + str(steps) + ' steps.')
+                break
             return
 
         if number == 1:
